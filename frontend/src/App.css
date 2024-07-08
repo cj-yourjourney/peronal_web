@@ -1,0 +1,60 @@
+/* src/styles/global.css */
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Example font */
+  background-color: #f8f9fa; /* Example background color */
+  color: #333; /* Example text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff; /* Example navbar background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example navbar shadow */
+}
+
+/* Main heading styles */
+.main-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Sub heading styles */
+.sub-heading {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Button styles */
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Profile image styles */
+.profile-image {
+  width: 200px; /* Adjust size as needed */
+  border-radius: 50%; /* Rounded profile image */
+}
+
+/* Badge styles */
+.badge {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+/* Card styles (for projects page) */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
