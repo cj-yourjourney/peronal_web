@@ -1,49 +1,33 @@
-// src/components/Navbar.tsx
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import { Link } from 'react-router-dom'
 
-const Navbar: React.FC = () => {
+const NavBar: React.FC = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-        Start Bootstrap
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        <Navbar.Brand as={Link} to="/">
+          React-Bootstrap
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link as={Link} to="/">
               Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+            </Nav.Link>
+            <Nav.Link as={Link} to="/resume">
               Resume
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+            </Nav.Link>
+            <Nav.Link as={Link} to="/projects">
               Projects
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 
-export default Navbar
+export default NavBar

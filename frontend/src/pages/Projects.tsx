@@ -1,7 +1,6 @@
 // src/pages/Projects.tsx
 import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
-import Navbar from '../components/Navbar'
 import projectImage1 from '../images/project1.png' // Replace with actual image paths
 import projectImage2 from '../images/project2.png' // Replace with actual image paths
 
@@ -24,7 +23,7 @@ const projects = [
 const Projects: React.FC = () => {
   return (
     <>
-      <Navbar />
+      
       <Container className="py-5">
         <h2 className="text-center mb-4">My Projects</h2>
         <Row>
